@@ -82,8 +82,7 @@ const Home = (props: HomeProps) => {
         setitemsAvailable(cndy?.state.itemsAvailable);
 
 
-        let active =
-          cndy?.state.goLiveDate?.toNumber() < new Date().getTime() / 1000;
+        let active =true;
         let presale = false;
         // whitelist mint?
         if (cndy?.state.whitelistMintSettings) {
